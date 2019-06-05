@@ -254,10 +254,6 @@ html {
 
 		h1 {
 			text-align: center;
-			font-family: museo-sans-rounded;
-			// ,
-			// 	sans-serif;
-
 			font-weight: 700;
 
 			font-style: bold;
@@ -272,10 +268,7 @@ html {
 
 		p {
 			text-align: center;
-			font-family: museo-sans-rounded,
-				sans-serif;
 			font-weight: 300;
-			font-style: normal;
 
 			font-size: 2rem;
 			margin-top: 10px;
@@ -301,6 +294,7 @@ html {
 
 
 .mid_left {
+
 	.blue_border();
 
 	width: 29%;
@@ -311,10 +305,7 @@ html {
 	padding: 20px;
 
 	h2 {
-		font-family: museo-sans-rounded,
-			sans-serif;
 		font-weight: 500;
-		font-style: normal;
 		font-size: 7rem;
 		text-align: center;
 
@@ -324,10 +315,7 @@ html {
 
 	div {
 		h3 {
-			font-family: museo-sans-rounded,
-				sans-serif;
 			font-weight: 700;
-			font-style: normal;
 
 			color: @color_5;
 			font-size: 1.7rem;
@@ -348,12 +336,42 @@ html {
 }
 
 .mid_right {
-	.blue_border();
+	.blue_border(); //used for testing
+
+	padding: 50px;
 
 	width: 71%;
 	height: 100%;
 
 	background: @color_4;
+
+	h2 {
+		font-weight: 700;
+		font-size: 2.8rem;
+		color: @color_3;
+	}
+
+	p {
+		font-weight: 300;
+		font-size: 1.9rem;
+		color: @color_2;
+	}
+
+	table {
+		margin-bottom: 40px;
+		color: @color_2;
+		font-size: 1.5rem;
+
+		.tab_head {
+			color: @color_5;
+		}
+	}
+
+	.mid_para {
+		h2 {
+			margin-bottom: 35px;
+		}
+	}
 }
 
 .footer {
@@ -372,11 +390,7 @@ html {
 
 		p {
 			color: @color_5;
-			font-family: museo-sans-rounded;
-
 			font-weight: 700;
-
-			font-style: normal;
 		}
 	}
 
@@ -403,12 +417,36 @@ html {
 
 
 
+// 
+// 
+// 
+// 
+
+#table {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#table td,
+#table th {
+	border-top: 25px solid #ddd;
+	padding: 30px;
+	text-align: center;
+}
+
+#table tr {
+	background-color: if((iscolor(@color_4)), darken(@color_4, 5%));
+}
 
 
-
-
-
-
+#table th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #4CAF50;
+	color: white;
+}
 
 // 
 // 

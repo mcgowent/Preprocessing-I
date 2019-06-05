@@ -204,7 +204,6 @@ html {
 }
 .top .top_right h1 {
   text-align: center;
-  font-family: museo-sans-rounded;
   font-weight: 700;
   font-style: bold;
   font-size: 4rem;
@@ -214,9 +213,7 @@ html {
 }
 .top .top_right p {
   text-align: center;
-  font-family: museo-sans-rounded, sans-serif;
   font-weight: 300;
-  font-style: normal;
   font-size: 2rem;
   margin-top: 10px;
   line-height: 1.2;
@@ -236,18 +233,14 @@ html {
   padding: 20px;
 }
 .mid_left h2 {
-  font-family: museo-sans-rounded, sans-serif;
   font-weight: 500;
-  font-style: normal;
   font-size: 7rem;
   text-align: center;
   color: #eef5db;
   margin-top: 20px;
 }
 .mid_left div h3 {
-  font-family: museo-sans-rounded, sans-serif;
   font-weight: 700;
-  font-style: normal;
   color: #fe5f55;
   font-size: 1.7rem;
   text-align: center;
@@ -262,9 +255,31 @@ html {
   font-weight: 500;
 }
 .mid_right {
+  padding: 50px;
   width: 71%;
   height: 100%;
   background: #eef5db;
+}
+.mid_right h2 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #4f6367;
+}
+.mid_right p {
+  font-weight: 300;
+  font-size: 1.9rem;
+  color: #7a9e9f;
+}
+.mid_right table {
+  margin-bottom: 40px;
+  color: #7a9e9f;
+  font-size: 1.5rem;
+}
+.mid_right table .tab_head {
+  color: #fe5f55;
+}
+.mid_right .mid_para h2 {
+  margin-bottom: 35px;
 }
 .footer {
   width: 100%;
@@ -280,13 +295,32 @@ html {
 }
 .footer .copyright p {
   color: #fe5f55;
-  font-family: museo-sans-rounded;
   font-weight: 700;
-  font-style: normal;
 }
 .footer .media_bar {
   padding-top: 60px;
   padding-bottom: 40px;
+}
+#table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#table td,
+#table th {
+  border-top: 25px solid #ddd;
+  padding: 30px;
+  text-align: center;
+}
+#table tr {
+  background-color: #e5efc7;
+}
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
 }
 .social-btns .btn,
 .social-btns .btn:before,
