@@ -156,17 +156,25 @@ body {
 
 /* Mixins */
 .red_border {
-	border: 5px solid red;
-	background: rgba(255, 0, 0, 0.205);
+	// border: 5px solid red;
+	// background: rgba(255, 0, 0, 0.205);
 }
 
 .blue_border {
-	border: 5px solid blue;
-	background: rgba(0, 0, 255, 0.233);
+	// border: 5px solid blue;
+	// background: rgba(0, 0, 255, 0.233);
 
 }
 
 /* Base Code   */
+html {
+	font-family: museo-sans-rounded, sans-serif;
+
+	font-weight: 900;
+
+	font-style: normal;
+}
+
 .wrapper {
 	background: @color_1;
 	width: 100%;
@@ -185,13 +193,19 @@ body {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+		color: @color_5;
+		font-size: 2rem;
+
+		a:hover {
+			color: @color_4;
+		}
 	}
 }
 
 // Mid Section -----------------------
 .container {
-	max-width: 1024px;
-	height: 1200px;
+	max-width: 1030px;
+	height: 1350px;
 	background: #7a9e9f;
 
 	margin-right: auto;
@@ -212,20 +226,64 @@ body {
 	.red_border();
 
 	width: 100%;
-	height: 296px;
+	height: 22%;
 
 	background: #4f6367;
 	display: flex;
 
-	.self_pic {
-		width: 274px;
+	.top_left {
+		width: 29%;
 		height: 100%;
 		.blue_border();
+
+		img {
+			width: 100%;
+			height: auto;
+			padding-top: 20px;
+			padding-left: 20px;
+		}
 	}
 
-	.title_top {
-		width: 740px;
+	.top_right {
+		width: 71%;
 		.blue_border();
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		h1 {
+			text-align: center;
+			font-family: museo-sans-rounded;
+			// ,
+			// 	sans-serif;
+
+			font-weight: 700;
+
+			font-style: bold;
+
+			font-size: 4rem;
+
+			margin-top: 25px;
+			line-height: 1.2;
+
+			color: @color_4;
+		}
+
+		p {
+			text-align: center;
+			font-family: museo-sans-rounded,
+				sans-serif;
+			font-weight: 300;
+			font-style: normal;
+
+			font-size: 2rem;
+			margin-top: 10px;
+			line-height: 1.2;
+
+			color: @color_1;
+
+		}
 	}
 }
 
@@ -235,21 +293,237 @@ body {
 	.red_border();
 
 	width: 100%;
-	height: 700px;
+	height: 60%;
 
 	display: flex;
 }
 
+
+
 .mid_left {
 	.blue_border();
 
-	width: 274px;
+	width: 29%;
 	height: 100%;
+	background: @color_2;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+
+	h2 {
+		font-family: museo-sans-rounded,
+			sans-serif;
+		font-weight: 500;
+		font-style: normal;
+		font-size: 7rem;
+		text-align: center;
+
+		color: @color_4;
+		margin-top: 20px;
+	}
+
+	div {
+		h3 {
+			font-family: museo-sans-rounded,
+				sans-serif;
+			font-weight: 700;
+			font-style: normal;
+
+			color: @color_5;
+			font-size: 1.7rem;
+			text-align: center;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		ul {
+			list-style-position: inside;
+			list-style-type: square;
+			margin-left: 20px;
+			color: @color_4;
+			font-weight: 500;
+		}
+	}
+
 }
 
 .mid_right {
 	.blue_border();
 
-	width: 740px;
+	width: 71%;
 	height: 100%;
+
+	background: @color_4;
+}
+
+.footer {
+	width: 100%;
+	height: 18%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+
+	background: @color_3;
+
+	.copyright {
+		margin-bottom: 20px;
+
+		p {
+			color: @color_5;
+			font-family: museo-sans-rounded;
+
+			font-weight: 700;
+
+			font-style: normal;
+		}
+	}
+
+	.media_bar {
+		padding-top: 60px;
+		padding-bottom: 40px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 
+// 
+// 
+// 
+
+@import '//codepen.io/chrisdothtml/pen/ojLzJK.css';
+
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fa {
+	transition: all 0.35s;
+	transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+.social-btns .btn:before {
+	top: 90%;
+	left: -110%;
+}
+
+.social-btns .btn .fa {
+	-webkit-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.social-btns .btn.facebook:before {
+	background-color: #3b5998;
+}
+
+.social-btns .btn.facebook .fa {
+	color: #3b5998;
+}
+
+.social-btns .btn.twitter:before {
+	background-color: #3cf;
+}
+
+.social-btns .btn.twitter .fa {
+	color: #3cf;
+}
+
+.social-btns .btn.google:before {
+	background-color: #dc4a38;
+}
+
+.social-btns .btn.google .fa {
+	color: #dc4a38;
+}
+
+.social-btns .btn.dribbble:before {
+	background-color: #f26798;
+}
+
+.social-btns .btn.dribbble .fa {
+	color: #f26798;
+}
+
+.social-btns .btn.skype:before {
+	background-color: #00aff0;
+}
+
+.social-btns .btn.skype .fa {
+	color: #00aff0;
+}
+
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+	top: -10%;
+	left: -10%;
+}
+
+.social-btns .btn:focus .fa,
+.social-btns .btn:hover .fa {
+	color: #fff;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.social-btns {
+	height: 90px;
+	// margin: auto;
+	font-size: 0;
+	text-align: center;
+	// position: absolute;
+	// top: 0;
+	// bottom: 0;
+	// left: 0;
+	// right: 0;
+}
+
+.social-btns .btn {
+	display: inline-block;
+	background-color: whitesmoke;
+	width: 90px;
+	height: 90px;
+	line-height: 90px;
+	margin: 0 40px;
+	// text-align: center;
+	position: relative;
+	overflow: hidden;
+	border-radius: 100%;
+	box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+	opacity: 0.99;
+}
+
+.social-btns .btn:before {
+	content: '';
+	width: 120%;
+	height: 120%;
+	position: absolute;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.social-btns .btn .fa {
+	font-size: 38px;
+	vertical-align: middle;
 }
