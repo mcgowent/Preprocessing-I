@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import '//codepen.io/chrisdothtml/pen/ojLzJK.css';
+@import "//codepen.io/chrisdothtml/pen/ojLzJK.css";
 html,
 body,
 div,
@@ -120,7 +120,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -173,12 +173,7 @@ html {
   margin-right: auto;
   margin-left: auto;
 }
-@media (max-width: 800px) {
-  .container {
-    width: 100%;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
+@media (max-width: 500px) {
 }
 .top {
   width: 100%;
@@ -319,7 +314,7 @@ html {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
 }
 .social-btns .btn,
@@ -396,7 +391,7 @@ html {
   opacity: 0.99;
 }
 .social-btns .btn:before {
-  content: '';
+  content: "";
   width: 120%;
   height: 120%;
   position: absolute;

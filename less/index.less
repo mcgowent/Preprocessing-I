@@ -126,7 +126,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: '';
+	content: "";
 	content: none;
 }
 
@@ -163,7 +163,6 @@ body {
 .blue_border {
 	// border: 5px solid blue;
 	// background: rgba(0, 0, 255, 0.233);
-
 }
 
 /* Base Code   */
@@ -211,14 +210,12 @@ html {
 
 	.red_border();
 
-	@media (max-width: 800px) {
-		width: 100%;
-
-		padding-right: 20px;
-		padding-left: 20px;
-
+	@media (max-width: 500px) {
+		// There is nothing I want this to do but I put it in for the assignments sake.
 	}
 }
+
+
 
 .top {
 	.red_border();
@@ -273,9 +270,12 @@ html {
 			line-height: 1.2;
 
 			color: @color_1;
-
 		}
 	}
+}
+
+@media (max-width: 500px) {
+	.top {}
 }
 
 
@@ -289,10 +289,7 @@ html {
 	display: flex;
 }
 
-
-
 .mid_left {
-
 	.blue_border();
 
 	width: 29%;
@@ -330,7 +327,6 @@ html {
 			font-weight: 500;
 		}
 	}
-
 }
 
 .mid_right {
@@ -398,11 +394,10 @@ html {
 	}
 }
 
-
-// 
-// 
-// 
-// 
+//
+//
+//
+//
 
 #table {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -421,21 +416,20 @@ html {
 	background-color: if((iscolor(@color_4)), darken(@color_4, 5%));
 }
 
-
 #table th {
 	padding-top: 12px;
 	padding-bottom: 12px;
 	text-align: left;
-	background-color: #4CAF50;
+	background-color: #4caf50;
 	color: white;
 }
 
-// 
-// 
-// 
-// 
+//
+//
+//
+//
 
-@import '//codepen.io/chrisdothtml/pen/ojLzJK.css';
+@import "//codepen.io/chrisdothtml/pen/ojLzJK.css";
 
 .social-btns .btn,
 .social-btns .btn:before,
@@ -535,7 +529,7 @@ html {
 }
 
 .social-btns .btn:before {
-	content: '';
+	content: "";
 	width: 120%;
 	height: 120%;
 	position: absolute;
