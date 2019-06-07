@@ -1,19 +1,146 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
 
   <title>My Resume</title>
+  <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="shortcut icon" type="image/png" href="img/favicon-32x32.png">
+  <link rel="stylesheet" href="https://use.typekit.net/bqi2imm.css">
 
-  <link rel="stylesheet" href="css/index.css">
+
 
   <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+
+  <script>
+    window.console = window.console || function (t) {};
+  </script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
 </head>
 
-<body>
-  <h1>My Resume</h1>
+<body class="wrapper">
+  <!-- Header Contains Nav Only -->
+  <header class="header">
+    <nav class="nav">
+      <a href="#">home</a>
+      <a href="#">portfolio</a>
+      <a href="#">contact</a>
+    </nav>
+  </header>
+
+  <!-- This is the inner container that holds all the rest of the stuff -->
+  <div class="container">
+    <!-- Top Title area is a box with 2 child boxes -->
+    <div class="top">
+      <section class="top_left">
+        <img src="img/Imageofself.jpg" alt="Image of Timohty Mcgowen smiling with long hair" />
+      </section>
+      <section class="top_right">
+        <h1>Timothy M. McGowen<br>Web Developer</h1>
+        <p>I give myself 100% to the projects I work on,<br> I love the thrill of learning new Technologies.</p>
+      </section>
+    </div>
+
+
+    <!-- Mid div had 2 major sections -->
+    <div class="mid">
+      <!-- Left-Mid -- Three sections, title, card, and card with the cards containing an h2 and p -->
+      <section class="mid_left parent">
+        <h2 class="child">skills</h2>
+
+        <div class="card child">
+          <h3>Web Development</h3>
+          <ul>
+            <li>HTML5, CSS3, Flexbox, Grid</li>
+            <li>LESS, Responsive Design</li>
+            <li>JavaScript, ES6 Syntax</li>
+            <li>React, JSX, Reactstrap,</li>
+            <li>React Router, HTTP/AJAX</li>
+            <li>and Redux</li>
+          </ul>
+        </div>
+        <div class="card child">
+          <h3>Graphic Design</h3>
+          <ul>
+            <li>Photoshop, Illustrator, AE</li>
+            <li>Lightroom, And InDesign</li>
+            <li>React, JSX, Reactstrap,</li>
+            <li>React Router, HTTP/AJAX</li>
+            <li>and Redux</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Right Mid -- Three divs with several smallers sections inside the mid one, and two in the lower bottom -->
+      <section class="mid_right">
+
+        <h2>Work History</h2>
+
+        <div class="table">
+          <table id="table">
+            <tr class="tab_head">
+              <td>Yrs</td>
+              <td>Company</td>
+              <td>Title</td>
+              <td>Tech Used</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Apple</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Microsoft</td>
+              <td>2</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Amazon</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="mid_para">
+          <h2>Listen up...</h2>
+          <p>This is a paragraph on why you should hire me over whomever else you are looking to hire. I have no real
+            work experience but I am the person you should hire.</p>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="media_bar">
+        <!-- https://codepen.io/chrisdothtml/full/azPYqq -->
+        <!-- Taken from this site  -->
+        <div class="social-btns">
+          <a class="btn facebook" href="#"><i class="fa fa-facebook"></i></a>
+          <a class="btn twitter" href="#"><i class="fa fa-twitter"></i></a>
+          <a class="btn google" href="#"><i class="fa fa-google"></i></a>
+          <a class="btn dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+          <a class="btn skype" href="#"><i class="fa fa-skype"></i></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copyCopyright Timothy McGowen 2019</p>
+      </div>
+
+    </footer>
+
+  </div>
 </body>
+
 </html>
